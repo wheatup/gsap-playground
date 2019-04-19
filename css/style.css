@@ -1,0 +1,95 @@
+html body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Open Sans', sans-serif; }
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  font-family: inherit; }
+
+.gsap {
+  background-color: #fff;
+  border: solid 2px rgba(0, 0, 0, 0.05);
+  width: 80vw;
+  min-width: 360px;
+  max-width: 640px;
+  height: 80vh;
+  max-height: 960px;
+  position: relative;
+  font-size: 100%; }
+
+body {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  font-family: 'Open Sans', sans-serif;
+  background-color: #eee; }
+
+.gsap--chatting > * {
+  position: absolute;
+  font-size: inherit;
+  transform-origin: center; }
+
+.gsap--chatting .user {
+  width: 8em;
+  bottom: 10%; }
+  .gsap--chatting .user--left {
+    left: 2em; }
+  .gsap--chatting .user--right {
+    right: 2em;
+    width: 7em; }
+
+.gsap--chatting .bubble {
+  width: 40%;
+  height: 5em;
+  border-radius: 1em;
+  display: flex;
+  align-items: center;
+  padding: 1em;
+  bottom: 10%; }
+  .gsap--chatting .bubble::after {
+    content: '';
+    display: block;
+    position: absolute;
+    background-color: inherit;
+    width: 1em;
+    height: 1em;
+    top: 20%; }
+  .gsap--chatting .bubble--left {
+    left: 11em;
+    background-color: #ae6;
+    justify-content: flex-end; }
+    .gsap--chatting .bubble--left::after {
+      left: 0;
+      transform: translateX(-95%);
+      -webkit-clip-path: polygon(100% 0, 0 50%, 100% 100%);
+      clip-path: polygon(100% 0, 0 50%, 100% 100%); }
+  .gsap--chatting .bubble--right {
+    right: 11em;
+    background-color: #adf;
+    justify-content: flex-start; }
+    .gsap--chatting .bubble--right::after {
+      right: 0;
+      transform: translateX(95%);
+      -webkit-clip-path: polygon(0 0, 100% 50%, 0 100%);
+      clip-path: polygon(0 0, 100% 50%, 0 100%); }
+  .gsap--chatting .bubble .dot::after {
+    content: '';
+    display: inline-block;
+    width: 0.75em;
+    height: 0.75em;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 20em;
+    margin: 0.2em 0.5em; }
+  .gsap--chatting .bubble .symbol {
+    display: inline-block;
+    margin: 0.2em 0.5em;
+    color: rgba(0, 0, 0, 0.2);
+    font-size: 2em; }
+
+.gsap--group .user {
+  width: 2em; }
