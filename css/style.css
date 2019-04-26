@@ -120,10 +120,14 @@ html body {
       display: block;
       width: 4em; }
       .gsap--omnichannel--icon__anybot {
-        width: 8rem;
+        width: 8em;
         border-radius: 10em; }
+      .gsap--omnichannel--icon__any, .gsap--omnichannel--icon__thing, .gsap--omnichannel--icon__one, .gsap--omnichannel--icon__time, .gsap--omnichannel--icon__where, .gsap--omnichannel--icon__bot {
+        font-size: 3em;
+        font-weight: bold;
+        width: initial; }
       .gsap--omnichannel--icon__ring {
-        width: 8rem;
-        height: 8rem;
+        width: 8em;
+        height: 8em;
         border-radius: 10em;
         border: 2px solid #000; }
